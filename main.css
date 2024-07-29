@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    margin-bottom: 100px;
+}
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container h1 {
+    font-family: "Bungee Shade", sans-serif;
+    color: #fff;
+    font-size: 50px;
+}
+
+header .container,
+.articles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    padding: 16px 0 ;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 36px;
+    background-color: rgb(4, 4, 155);
+}
+.menu > li {
+    float: left;
+    list-style: none;
+    padding: 16px;
+    position: relative;
+}
+
+.articles {
+    align-items: flex-start;
+}
+
+.menu li a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.articles img {
+    margin-right: 20px;
+    height: 420px;
+    width: 420px;
+}
+
+section h2 {
+    padding: 10px;
+    color:rgb(6, 4, 148);
+    margin-bottom: 25px;
+    border-bottom: 2px solid rgb(57, 57, 233);
+    margin-top: 20px;
+}
+
+.conteudo p {
+    color:rgb(6, 4, 148);
+    font-size: 15px;
+}
+
+article button {
+    margin-top: 10px;
+    padding: 8px;
+    width: 100%;
+    background-color: rgb(71, 71, 241);
+    color: #fff;
+    cursor: pointer;
+} 
+
+article h3 {
+    margin-top: 10px;
+}
+
+.Produtos article img {
+    height: 250px;
+    width: 250px;
+    display: block;
+}
+
+.Produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 24%);
+    column-gap: 1%;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    body {
+        margin: 15px;
+    }
+    
+    .container {
+        max-width: 100%;
+    }
+
+    .articles {
+        display: block;
+    }
+
+    .articles  img {
+        max-width: 100%;
+        margin-right: 0;
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+
+    .Produtos {
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+        column-gap: 1%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .menu li a {
+        font-size: 15px;
+        list-style: none;
+        position: none;
+    }
+
+    .container h1 {
+        margin-left: 30px;
+    }
+    
+    .conteudo {
+        margin: 30px;
+    }
+
+    .articles {
+        display: block;
+    }
+
+    .articles  img {
+        max-width: 100%;
+        margin-right: 0;
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+
+    #produto {
+        margin: 30px;
+    }
+
+    .Produtos {
+        display: block;
+    }
+
+    .alinhar {
+        margin-top: 20px;
+    }
+}
